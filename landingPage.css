@@ -4,6 +4,10 @@ header{
     background: #f38434;
     
     }
+    .continer{
+        width: 80%;
+        margin: 0 auto;
+    }
     .menu{
         list-style-type: none;
         display: flex;
@@ -11,9 +15,11 @@ header{
         float: right;
         padding: 35px 0;
         }
-        li{
+        nav li{
             display: inline-block;
             padding: 0px 20px;
+            margin-left: 70px;
+            position: relative;
             
         }
         ul{
@@ -32,6 +38,18 @@ header{
        nav a{
            text-decoration: none;
            text-transform: uppercase;
-           color: black;
+           color: #222;
+
+       }
+       nav a:hover {
+           color: #000;
+
+       }
+       nav a::before {
+           display: block;
+           content: '';
+           height: 5px;
+           width: 100%;
+           background-color: #444;
 
        }
